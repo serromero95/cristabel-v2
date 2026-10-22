@@ -5,6 +5,18 @@ Aplicación de comercio electrónico de equipamiento de senderismo, desarrollada
 
 **Estado:** En desarrollo.
 
+## Demo online
+
+🌐 [Ver aplicación](https://cristabel-frontend.onrender.com/)
+
+La aplicación está desplegada utilizando:
+- Render para el frontend React.
+- Render para la API Java/Spring Boot.
+- Aiven para MySQL.
+
+> Proyecto en desarrollo. Actualmente permite consultar
+> el catálogo y las fichas individuales de productos.
+
 ## Tecnologías
 
 ### Backend
@@ -43,7 +55,7 @@ a la base de datos MySQL.
 
 - `frontend/` — Aplicación React.
 - `backend/` — API REST con Java y Spring Boot.
-- `database/` — Script SQL de inicialización (pendiente).
+- `database/` — Script SQL para recrear la base de datos.
 
 ## Próximas funcionalidades
 
@@ -51,7 +63,6 @@ a la base de datos MySQL.
 - Carrito de compra.
 - Autenticación de usuarios.
 - Gestión de pedidos.
-- Despliegue de la aplicación.
 
 ## Objetivo
 
