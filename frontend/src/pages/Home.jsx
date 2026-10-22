@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard/ProductCard";
-
-const URL = "http://localhost:8080/api/products";
+import { API_URL } from "../config";
 
 async function getProducts() {
-  const response = await fetch(URL);
+  const response = await fetch(`${API_URL}/api/products`);
   if (!response.ok) throw new Error(`Error ${response.status}`);
   return response.json();
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router";
+import { API_URL } from "../config";
 
 function ProductDetail() {
   const { id } = useParams();
@@ -15,7 +16,7 @@ function ProductDetail() {
     setError(null);
 
     async function getProductDetails() {
-      const response = await fetch(`http://localhost:8080/api/products/${id}`);
+      const response = await fetch(`${API_URL}/api/products/${id}`);
 
       if (response.status === 404) {
         throw new Error("Producto no encontrado");
