@@ -1,0 +1,21 @@
+
+# React / Node
+**/node_modules/
+**/dist/
+
+# Java / Maven
+**/target/
+*.class
+
+# Contraseñas y variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos locales del IDE
+.idea/
+.vscode/
